@@ -1,0 +1,37 @@
+html {
+    background-color: rgb(185, 243, 243);
+}
+
+main {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    border: 5px;
+    margin: 5px;
+}
+
+.content {
+    font-weight: 500;
+    margin: 5px;
+}
+/* wasn't sure how to inherit `li` from `.content` ...*/
+/* seems like a waste */
+li {
+    font-weight: 500;
+    margin: 5px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_dividers.asp */
+.solid-border {
+    border-top: 3px solid #fff;
+}
+
+.dashed-border {
+    border-top: 3px dotted #bbb;
+
+}
