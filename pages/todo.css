@@ -1,0 +1,33 @@
+html {
+    background-color: cornflowerblue;
+}
+
+.title {
+    color: black;
+    font-family: fantasy
+}
+
+.todo-list-button {
+    border: 0px;
+    color: white;
+    background-color: grey;
+
+    text-align: center;
+}
+
+.todo-list-button:hover{
+    border: 1px solid black;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.todolist-flexy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    max-width: 100%;
+}
