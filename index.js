@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(_, _) {
 
         const complete = document.createElement('input')
         complete.type = 'checkbox'
+        complete.innerHTML = 'Finished?'
         complete.id = `__checkbox${list.childNodes.length}`
 
         complete.addEventListener('click', (event) => {
@@ -36,10 +37,15 @@ document.addEventListener('DOMContentLoaded', function(_, _) {
         item.appendChild(complete)
         list.appendChild(item)
         input.value = ''
-    })
 
+        const title = document.getElementById('_tdl_title')
+        title.innerHTML = `Todo List (${list.childNodes.length} items)`
+    })
     remove.addEventListener('click', () => {
         const list = document.getElementById('todo-list')
         list.innerHTML = ''
+
+        const title = document.getElementById('_tdl_title')
+        title.innerHTML = `Todo List (${list.childNodes.length} items)`
     })
 })
